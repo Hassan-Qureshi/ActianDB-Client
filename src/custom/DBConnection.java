@@ -95,7 +95,12 @@ public class DBConnection {
 	}
 
 	public static Connection setUpConnection() {
+		
+//						test = database name
+//						user = table name
 		String url = "jdbc:pervasive://localhost:1583/test?user=tcp";
+		
+		
 		try {
 			Class.forName("com.pervasive.jdbc.v2.Driver");
 			con = (Connection) DriverManager.getConnection(url);
